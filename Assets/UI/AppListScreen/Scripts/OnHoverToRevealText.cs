@@ -7,7 +7,7 @@ public class OnHoverToRevealText : MonoBehaviour, IPointerEnterHandler, IPointer
 {
     public GameObject TextPanel;
     public void OnPointerEnter(PointerEventData eventData)
-    {
+    {   //Can be lerped to appear smoothly using a coroutine but no time
         TextPanel.SetActive(true);
     }
 

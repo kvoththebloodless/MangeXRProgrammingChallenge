@@ -8,7 +8,7 @@ namespace Network.Data.Datamodels
         public bool hidden;
         public int sortorder;
         public string title;
-        public string icon;
+        public string iconUrl;
 
         //Todo: If there's time, add the packagename to the Application model when making list.
         public string packagename;

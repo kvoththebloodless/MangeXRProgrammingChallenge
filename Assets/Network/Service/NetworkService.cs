@@ -10,9 +10,10 @@ namespace Network.Service
     {
         public Action<UIData> OnUIDataUpdate = (data) => { };
 
+        //Every 20 seconds we refetch info and keep the data fresh
         private float frequency = 20f;
 
-        private float currentTime;
+        private float currentTime = 0;
         // Start is called before the first frame update
         void Start()
         {
@@ -32,7 +33,11 @@ namespace Network.Service
             }
         }
 
-
+        /// <summary>
+        /// Gets the data from a URL. Right now mocked to read local data
+        /// </summary>
+        /// <param name="URI"></param>
+        /// <returns></returns>
         public UIData GET(string URI)
         {
             try

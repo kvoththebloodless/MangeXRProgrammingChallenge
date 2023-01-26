@@ -26,7 +26,10 @@ public class AppListScreenUI : MonoBehaviour
 
 
     }
-
+    /// <summary>
+    /// When the data updates after 20 sec refresh from networkservice
+    /// </summary>
+    /// <param name="data">the updated UIData</param>
     void OnUIDataUpdate(UIData data)
     {
         var appdatalist = data.Applications;
@@ -49,8 +52,8 @@ public class AppListScreenUI : MonoBehaviour
             var textField = appObj.GetComponentInChildren<TextMeshProUGUI>(true);
             textField.text = app.title;
             var image = appObj.GetComponentInChildren<RawImage>();
-            if (app.icon != null)
-                StartCoroutine(DownloadIconImage(app.icon, (Texture2D tex) => { image.texture = tex; }));
+            if (app.iconUrl != null)
+                StartCoroutine(DownloadIconImage(app.iconUrl, (Texture2D tex) => { image.texture = tex; }));
             else
                 image.texture = DefaultIcon;
         }
@@ -61,6 +64,13 @@ public class AppListScreenUI : MonoBehaviour
 
     // This will probably move to the network layer where a GET method exists where you can provide
     // a URI and get a texture. It can be used across the codebase. But in the interest of time. 
+
+    /// <summary>
+    /// A coroutine that downloads the image from iconURL in json if it exists otherwise uses the default icon
+    /// </summary>
+    /// <param name="iconURL"></param>
+    /// <param name="OnRequestComplete"></param>
+    /// <returns></returns>
     IEnumerator DownloadIconImage(string iconURL, Action<Texture2D> OnRequestComplete)
     {
         UnityWebRequest request = UnityWebRequestTexture.GetTexture(iconURL);
