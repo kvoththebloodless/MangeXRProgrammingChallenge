@@ -10,13 +10,15 @@ namespace Network.Service
     {
         public Action<UIData> OnUIDataUpdate = (data) => { };
 
-        private float frequency = 0.5f;
+        private float frequency = 20f;
 
         private float currentTime;
         // Start is called before the first frame update
         void Start()
         {
-
+            //Initial fetch of UIDATA
+            var newUIData = GET("https://UIDATA/SOMETHING");
+            OnUIDataUpdate.Invoke(newUIData);
         }
 
         // Update is called once per frame
@@ -26,8 +28,10 @@ namespace Network.Service
             {
                 var newUIData = GET("https://UIDATA/SOMETHING");
                 OnUIDataUpdate.Invoke(newUIData);
+                currentTime = Time.time;
             }
         }
+
 
         public UIData GET(string URI)
         {
