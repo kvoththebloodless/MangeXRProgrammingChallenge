@@ -1,0 +1,49 @@
+{
+        "com.mightyimmersion.customlauncher.pico": {
+            "hidden": true,
+            "sortOrder": 4,
+            "title": "App 1"
+        },
+        "com.mightyimmersion.versiontest": {
+            "hidden": false,
+            "sortOrder": 3,
+            "title": "App 2",
+            "iconUrl": "https://firebasestorage.googleapis.com/v0/b/mighty-platform-dev.appspot.com/o/organizations%2FtestOrg%2Fapps%2Fcom.beatgames.beatsaber.demo%2Ficons%2Ficon_1602656527.png?alt=media&token=6275da53-cd22-40c5-9a5b-995efc6fe71f"
+        },
+        "com.mightyimmersion.versiontest.obb": {
+            "hidden": false,
+            "sortOrder": 2,
+            "title": "App 3"
+        },
+        "com.mightyimmersion.versiontest1": {
+            "hidden": false,
+            "sortOrder": 1,
+            "iconUrl": "https://firebasestorage.googleapis.com/v0/b/mighty-platform-dev.appspot.com/o/organizations%2FtestOrg%2Fapps%2Fcom.beatgames.beatsaber.demo%2Ficons%2Ficon_1602656527.png?alt=media&token=6275da53-cd22-40c5-9a5b-995efc6fe71f",
+            "title": "App 4"
+        },
+        "com.mightyimmersion.mightyplatform.adminapp.dev.pico": {
+            "hidden": true,
+            "sortOrder": 99999,
+            "title": "App 5"
+        },
+        "com.mightyimmersion.mightyplatform.adminapp.dev.pico6": {
+            "hidden": true,
+            "sortOrder": 99999,
+            "title": "App 6"
+        },
+        "com.mightyimmersion.mightyplatform.adminapp.dev.pico7": {
+            "hidden": true,
+            "sortOrder": 99999,
+            "title": "App 7"
+        },
+        "com.mightyimmersion.mightyplatform.adminapp.dev.pico8": {
+            "hidden": true,
+            "sortOrder": 99999,
+            "title": "App 8"
+        },
+        "com.mightyimmersion.mightyplatform.adminapp.dev.pico9": {
+            "hidden": true,
+            "sortOrder": 99999,
+            "title": "App 9"
+        }
+}

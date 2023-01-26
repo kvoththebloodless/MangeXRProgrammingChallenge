@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: aa4f84340afa0cb4dbae464df1e19d5e
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Roberto
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2586aa1aea4929d42819126b3f0e490d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
